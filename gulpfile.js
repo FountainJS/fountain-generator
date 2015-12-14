@@ -18,7 +18,7 @@ function eslintCheck() {
 
 function istanbulCover() {
   return gulp.src('generators/**/index.js')
-    .pipe(istanbul({ includeUntested: true }))
+    .pipe(istanbul({includeUntested: true}))
     .pipe(istanbul.hookRequire());
 }
 
