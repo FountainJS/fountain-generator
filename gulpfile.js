@@ -25,7 +25,7 @@ function istanbulCover() {
 function mochaTest() {
   return gulp.src('test/**/*.js')
     .pipe(mocha({reporter: 'spec'}))
-    .once('error', function errorHandler(err) {
+    .once('error', err => {
       gutil.log(gutil.colors.red('[Mocha]'), err.toString());
       process.exit(1);
     })
