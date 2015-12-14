@@ -1,6 +1,6 @@
 {
   "name": "fountain-generator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Base generator for all Yeoman 'Fountain' generators",
   "homepage": "",
   "repository": "fountainjs/fountain-generator",
@@ -19,7 +19,7 @@
     "cli"
   ],
   "engines": {
-    "node" : ">=4.0"
+    "node": ">=4.0"
   },
   "dependencies": {
     "ejs": "^2.3.4",
