@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "ejs": "^2.3.4",
+    "falafel": "^1.2.0",
     "lodash": "^3.10.1",
     "yeoman-generator": "^0.21.1"
   },
