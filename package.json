@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
+    "ejs": "^2.3.4",
     "eslint-config-xo-space": "^0.8.0",
     "eslint-plugin-babel": "^3.0.0",
     "gulp": "gulpjs/gulp#4.0",
@@ -37,6 +38,8 @@
     "gulp-istanbul": "^0.10.2",
     "gulp-mocha": "^2.1.3",
     "gulp-util": "^3.0.7",
+    "mem-fs": "^1.1.2",
+    "mem-fs-editor": "^2.1.0",
     "yeoman-assert": "^2.1.0"
   },
   "scripts": {
@@ -49,7 +52,10 @@
       "mocha": true
     },
     "rules": {
-      "babel/object-curly-spacing": [2, "always"]
+      "babel/object-curly-spacing": [
+        2,
+        "always"
+      ]
     }
   }
 }
