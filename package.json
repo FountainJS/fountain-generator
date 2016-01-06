@@ -42,6 +42,7 @@
     "mem-fs": "^1.1.2",
     "mem-fs-editor": "^2.1.0",
     "mz": "^2.1.0",
+    "semver": "^5.1.0",
     "yeoman-assert": "^2.1.0"
   },
   "scripts": {

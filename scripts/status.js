@@ -1,24 +1,18 @@
 'use strict';
 
-const exec = require('mz/child_process').exec;
 const co = require('co');
-const locate = require('./locate');
-
-const command = 'git status';
+const utils = require('./utils');
 
 co(function *() {
   try {
-    const folders = yield locate.folders();
-    const commandPromises = folders.map(folder => {
-      return exec(command, { cwd: folder });
-    });
-    const commandResults = yield Promise.all(commandPromises);
-    commandResults
-      .forEach((commandResult, index) => {
-        if (commandResult[0].indexOf('nothing to commit, working directory clean') === -1) {
-          console.log(folders[index]);
-          console.log(commandResult[0]);
-        }
+    const results = yield utils.execOnEach('git status');
+    results
+      .filter(result => {
+        return result.result[0].indexOf('nothing to commit') === -1;
+      })
+      .forEach(result => {
+        console.log(result.folder);
+        console.log(result.result[0]);
       });
   } catch (error) {
     console.error('Something went wrong', error);
