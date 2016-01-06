@@ -89,7 +89,7 @@ co(function *() {
     yield utils.execOnEach(`npm publish`);
     console.log('ok!');
 
-    console.log('Everything is ok! ${version} is published on GitHub and NPM!');
+    console.log(`Everything is ok! ${version} is published on GitHub and NPM!`);
   } catch (error) {
     console.error('Something went wrong', error);
   }
