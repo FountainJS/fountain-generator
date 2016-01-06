@@ -51,11 +51,6 @@ exports.execOnEach = function *(command) {
   const results = yield exports.each(folder => {
     return exec(command, { cwd: folder });
   });
-  results.forEach(result => {
-    if (result.result[1] !== '') {
-      throw new Error(result.result[1]);
-    }
-  });
   return results;
 };
 

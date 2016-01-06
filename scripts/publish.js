@@ -8,7 +8,7 @@ const version = process.argv[process.argv.length - 1];
 
 co(function *() {
   try {
-    console.log('Checking uncommited changes...');
+    console.log('Checking Git repos...');
     const statusResults = yield utils.execOnEach('git status');
     const uncommitedFiles = statusResults
       .filter(result => {
@@ -21,10 +21,30 @@ co(function *() {
         .join(', '));
       return;
     }
+    const nonMasterBranch = statusResults
+      .filter(result => {
+        return result.result[0].indexOf('On branch master\n') === -1;
+      });
+    if (nonMasterBranch.length > 0) {
+      console.error('These repos are not on the master branch:', nonMasterBranch
+        .map(result => result.folder)
+        .join(', '));
+      return;
+    }
+    const notPushedCommits = statusResults
+      .filter(result => {
+        return result.result[0].indexOf('Your branch is ahead') > -1;
+      });
+    if (notPushedCommits.length > 0) {
+      console.error('These repos have not pushed commits:', notPushedCommits
+        .map(result => result.folder)
+        .join(', '));
+      return;
+    }
     console.log('ok!');
 
-    console.log('Checking Git branches and pulling changes...');
-    yield utils.execOnEach(`git checkout master && git pull origin master`);
+    console.log('Pulling git changes...');
+    yield utils.execOnEach(`git pull origin master`);
     console.log('ok!');
 
     console.log('Checking versions...');
@@ -58,7 +78,7 @@ co(function *() {
     console.log('ok!');
 
     console.log('Commiting changes in git...');
-    yield utils.execOnEach(`git add . && git commit -m "bump to version ${version}" && git push`);
+    yield utils.execOnEach(`git add package.json && git commit -m "bump to version ${version}" && git push`);
     console.log('ok!');
 
     console.log('Tagging git...');
