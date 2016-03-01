@@ -14,6 +14,20 @@
     "text2": "A declarative, efficient, and flexible JavaScript library for building user interfaces"
   },
   {
+    "key": "angular1",
+    "title": "Angular 1",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/angular1.png",
+    "text1": "HTML enhanced for web apps!",
+    "text2": "AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop."
+  },
+  {
+    "key": "angular2",
+    "title": "Angular 2",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/angular2.png",
+    "text1": "One framework. Mobile and desktop.",
+    "text2": "In Angular you display data by defining components. Data in your component classes is automatically available to display in your templates or control how they render as in the example below."
+  },
+  {
     "key": "browsersync",
     "title": "Browsersync",
     "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/browsersync.png",
@@ -24,8 +38,22 @@
     "key": "scss",
     "title": "Sass",
     "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/sass.png",
-    "text1": "Syntactically Awesome Style Sheets",
-    "text2": "CSS with superpowers"
+    "text1": "Syntactically Awesome Style Sheets.",
+    "text2": "CSS with superpowers."
+  },
+  {
+    "key": "less",
+    "title": "Less",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/less.png",
+    "text1": "Less is a CSS pre-processor.",
+    "text2": "It extends the CSS language by adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable."
+  },
+  {
+    "key": "css",
+    "title": "CSS",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/css.png",
+    "text1": "Cascading Style Sheets.",
+    "text2": "A simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents."
   },
   {
     "key": "babel",
@@ -35,11 +63,32 @@
     "text2": "Use next generation JavaScript, today"
   },
   {
+    "key": "js",
+    "title": "JavaScript",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/js.png",
+    "text1": "A high-level, dynamic, untyped, and interpreted programming language.",
+    "text2": "A prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles."
+  },
+  {
+    "key": "typescript",
+    "title": "TypeScript",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/typescript.png",
+    "text1": "TypeScript lets you write JavaScript the way you really want to.",
+    "text2": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript."
+  },
+  {
     "key": "eslint",
     "title": "ESLint",
     "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/eslint.png",
-    "text1": "The pluggable linting utility for JavaScript and JSX",
-    "text2": "1 tool for identifying and reporting on patterns found in ECMAScript/JavaScript code"
+    "text1": "The pluggable linting utility for JavaScript and JSX.",
+    "text2": "1 tool for identifying and reporting on patterns found in ECMAScript/JavaScript code."
+  },
+  {
+    "key": "tslint",
+    "title": "TSLint",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/tslint.png",
+    "text1": "A Linter for the TypeScript language.",
+    "text2": "TSLint checks your TypeScript code for readability, maintainability, and functionality errors."
   },
   {
     "key": "karma",
@@ -53,6 +102,20 @@
     "title": "Webpack",
     "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/webpack.png",
     "text1": "Webpack is a module bundler",
-    "text2": "webpack, the production / unbiased / flexible / extensible / open source module bundler"
+    "text2": "Webpack, the production / unbiased / flexible / extensible / open source module bundler"
+  },
+  {
+    "key": "systemjs",
+    "title": "SystemJS",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/systemjs.png",
+    "text1": "Universal dynamic module loader.",
+    "text2": "Loads ES6 modules, AMD, CommonJS and global scripts in the browser and NodeJS. Works with both Typescript and Babel."
+  },
+  {
+    "key": "inject",
+    "title": "Inject & Bower",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/inject.png",
+    "text1": "Automatically inject scripts and styles tags in your HTML.",
+    "text2": "Use Bower, a package manager for the web."
   }
 ]
