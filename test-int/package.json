@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bluebird": "^3.3.3",
+    "co": "^4.6.0",
+    "cross-spawn": "^2.1.5",
+    "fountain-generator": "fountainjs/fountain-generator",
+    "generator-fountain-angular1": "fountainjs/generator-fountain-angular1",
+    "generator-fountain-angular2": "fountainjs/generator-fountain-angular2",
+    "generator-fountain-browsersync": "fountainjs/generator-fountain-browsersync",
+    "generator-fountain-eslint": "fountainjs/generator-fountain-eslint",
+    "generator-fountain-gulp": "fountainjs/generator-fountain-gulp",
+    "generator-fountain-inject": "fountainjs/generator-fountain-inject",
+    "generator-fountain-karma": "fountainjs/generator-fountain-karma",
+    "generator-fountain-react": "fountainjs/generator-fountain-react",
+    "generator-fountain-systemjs": "fountainjs/generator-fountain-systemjs",
+    "generator-fountain-tslint": "fountainjs/generator-fountain-tslint",
+    "generator-fountain-webapp": "fountainjs/generator-fountain-webapp",
+    "generator-fountain-webpack": "fountainjs/generator-fountain-webpack",
+    "yeoman-test": "^1.1.0"
+  }
+}
