@@ -114,7 +114,7 @@
   {
     "key": "inject",
     "title": "Inject & Bower",
-    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/inject.png",
+    "logo": "https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/bower.png",
     "text1": "Automatically inject scripts and styles tags in your HTML.",
     "text2": "Use Bower, a package manager for the web."
   }
