@@ -49,6 +49,13 @@
     "text2": "It extends the CSS language by adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable."
   },
   {
+    "key": "stylus",
+    "title": "Stylus",
+    "logo": "http://fountainjs.io/assets/imgs/stylus.png",
+    "text1": "Robust, expressive, and feature-rich CSS superset",
+    "text2": "Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style."
+  },
+  {
     "key": "css",
     "title": "CSS",
     "logo": "http://fountainjs.io/assets/imgs/css.png",
