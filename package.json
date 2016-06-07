@@ -23,6 +23,7 @@
     "node": ">=4.0"
   },
   "dependencies": {
+    "chalk": "^1.1.3",
     "ejs": "^2.3.4",
     "falafel": "^1.2.0",
     "lodash": "^4.10.0",
