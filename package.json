@@ -33,18 +33,37 @@
     "yeoman-generator": "^0.23.3"
   },
   "devDependencies": {
+    "ava": "^0.15.2",
     "babel-eslint": "^6.0.2",
+    "cartesian-product": "^2.1.2",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "chai-things": "^0.2.0",
+    "cross-spawn": "^4.0.0",
     "ejs": "^2.3.4",
     "eslint": "^2.7.0",
     "eslint-config-xo-space": "^0.12.0",
     "eslint-plugin-babel": "^3.0.0",
+    "fs-extra": "^0.30.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-eslint": "^2.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.10.2",
-    "gulp-mocha": "^2.1.3",
     "gulp-nsp": "^2.4.0",
-    "gulp-plumber": "^1.1.0"
+    "nyc": "^6.6.1"
+  },
+  "ava": {
+    "files": [
+      "test/lib/**/*.js"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "lib/*.js"
+    ],
+    "exclude": [
+      "lib/techs.json",
+      "lib/test-utils.js"
+    ]
   },
   "scripts": {
     "test": "gulp",
