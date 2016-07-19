@@ -1,6 +1,6 @@
 {
   "name": "fountain-generator",
-  "version": "0.6.0",
+  "version": "0.6.1-test.1",
   "description": "Base generator for all Yeoman 'Fountain' generators",
   "homepage": "",
   "repository": "fountainjs/fountain-generator",
