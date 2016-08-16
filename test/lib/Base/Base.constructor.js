@@ -16,13 +16,14 @@ test.before(() => {
   require('../../../lib/Base');
 });
 
-test(`Call 'this.option' 4 times with correct parameters`, () => {
+test(`Call 'this.option' 5 times with correct parameters`, () => {
   context.option = () => {};
   const spy = chai.spy.on(context, 'option');
   context.constructor();
-  expect(spy).to.have.been.called.exactly(4);
+  expect(spy).to.have.been.called.exactly(5);
   expect(spy).to.have.been.called.with('framework');
   expect(spy).to.have.been.called.with('modules');
   expect(spy).to.have.been.called.with('css');
   expect(spy).to.have.been.called.with('js');
+  expect(spy).to.have.been.called.with('ci');
 });
