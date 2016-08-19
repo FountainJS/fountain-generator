@@ -30,10 +30,10 @@
     "mem-fs": "^1.1.2",
     "mem-fs-editor": "^2.2.0",
     "minimatch": "^3.0.2",
-    "yeoman-generator": "^0.23.3"
+    "yeoman-generator": "^0.24.1"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "babel-eslint": "^6.0.2",
     "cartesian-product": "^2.1.2",
     "chai": "^3.5.0",
@@ -42,14 +42,14 @@
     "cross-spawn": "^4.0.0",
     "ejs": "^2.3.4",
     "eslint": "^3.2.2",
-    "eslint-config-xo-space": "^0.12.0",
+    "eslint-config-xo-space": "^0.14.0",
     "eslint-plugin-babel": "^3.0.0",
     "fs-extra": "^0.30.0",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-eslint": "^2.0.0",
+    "gulp-eslint": "^3.0.1",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-nsp": "^2.4.0",
-    "nyc": "^6.6.1"
+    "nyc": "^8.1.0"
   },
   "ava": {
     "files": [
