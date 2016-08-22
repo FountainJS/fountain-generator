@@ -28,6 +28,13 @@
     "text2": "In Angular you display data by defining components. Data in your component classes is automatically available to display in your templates or control how they render as in the example below."
   },
   {
+    "key": "vue",
+    "title": "Vue.js 2",
+    "logo": "http://fountainjs.io/assets/imgs/vue.png",
+    "text1": "Reactive Components for Modern Web Interfaces",
+    "text2": "Write some HTML, grab some JSON, create a Vue instance, that's it."
+  },
+  {
     "key": "browsersync",
     "title": "Browsersync",
     "logo": "http://fountainjs.io/assets/imgs/browsersync.png",
