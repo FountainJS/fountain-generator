@@ -70,7 +70,7 @@ test(`Return json object when js object contains template literal as key`, t => 
     'lit>>toto<<lit': {
       baseDir: []
     },
-    'open': false
+    open: false
   };
   const result = json(obj);
   const expected =
