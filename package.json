@@ -30,7 +30,7 @@
     "mem-fs": "^1.1.2",
     "mem-fs-editor": "^2.2.0",
     "minimatch": "^3.0.2",
-    "yeoman-generator": "^0.24.1"
+    "yeoman-generator": "yeoman/generator#871ed39e92b6ce693d99eabefb15ad82f30fa38d"
   },
   "devDependencies": {
     "ava": "^0.16.0",
