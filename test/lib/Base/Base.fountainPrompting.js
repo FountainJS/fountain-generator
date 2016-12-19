@@ -10,8 +10,8 @@ test.before(() => {
   context = {
     props: {}
   };
-  generators.Base.extend = description => Object.assign(context, description, generators.Base);
-  generators.Base.apply = () => {};
+  generators.extend = description => Object.assign(context, description, generators);
+  generators.apply = () => {};
   require('../../../lib/Base');
 });
 
