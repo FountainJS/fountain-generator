@@ -12,7 +12,7 @@ test.beforeEach(() => {
 test('Write fixture object in package.json', t => {
   const mergeJson = require('../../../lib/file-utils').mergeJson;
   const fixture = {
-    dependencies: {angular: '^1.5.0'}
+    dependencies: {angular: '^1.6.4'}
   };
   mergeJson.call(context, '../test/assets/package.json', fixture);
   t.deepEqual(context.writeJSON[context.templatePath('../test/assets/package.json')], fixture);
