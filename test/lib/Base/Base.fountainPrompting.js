@@ -19,6 +19,9 @@ function setup(framework, fixture, context) {
   context.options = {framework};
   context.prompt = questions => {
     questions.forEach(question => {
+      if (typeof question.when === 'function') {
+        question.when(fixture);
+      }
       if (typeof question.choices === 'function') {
         question.choices(fixture);
       }
@@ -42,6 +45,13 @@ test(`Set the props to the prompts value when framework is 'angular2'`, t => {
   setup('angular2', fixture, context);
   context.fountainPrompting();
   t.deepEqual(context.props, Object.assign(fixture, {framework: 'angular2'}));
+});
+
+test(`Set the props to the prompts value when framework is 'vue'`, t => {
+  const fixture = {framework: 'vue', js: 'js', modules: 'webpack'};
+  setup('vue', fixture, context);
+  context.fountainPrompting();
+  t.deepEqual(context.props, Object.assign(fixture, {framework: 'vue'}));
 });
 
 test('Clear the props if props is not an object', t => {
